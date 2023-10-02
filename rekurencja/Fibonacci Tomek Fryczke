@@ -1,0 +1,13 @@
+Pierwsze 30 liczb Fibonacciego
+
+import math
+def fib(x):
+  s = math.sqrt(5)
+  f = (1/s) * ( pow(((1+s)/2),x) - pow(((1-s)/2),x) )
+  print(int(f))
+  x = x+1
+  if x<30:      <------- Tutaj zmienić ilość
+    fib(x)
+fib(0)
+
+https://replit.com/@TRONEK/Fibonacci#main.py
